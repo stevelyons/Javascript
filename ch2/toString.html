@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Using the toString() method to display different number bases.</p>
+
+<p id="demo"></p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var myNumber = 128;
+    document.getElementById("demo").innerHTML = "128 = " + 
+    myNumber + " Decimal, " +
+    myNumber.toString(16) + " Hexadecimal, " +
+    myNumber.toString(8) + " Octal, " +
+    myNumber.toString(2) + " Binary."
+}
+</script>
+
+</body>
+</html>
