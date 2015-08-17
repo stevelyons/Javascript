@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Use match() to find matching strings: </p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = "The rain in SPAIN stays mainly in the plain"; 
+    var res = str.match(/ain/g);
+    document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
+
