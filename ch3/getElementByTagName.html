@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function getElements() {
+    var x = document.getElementsByTagName("input");
+    document.getElementById("demo").innerHTML = x.length;
+}
+</script>
+</head>
+<body>
+
+<input type="text" size="20"><br>
+<input type="text" size="20"><br>
+<input type="text" size="20"><br>
+
+<p>
+<input type="button" onclick="getElements()" value="How many input elements?">
+</p>
+
+<p id="demo"></p>
+
+</body>
+</html>
