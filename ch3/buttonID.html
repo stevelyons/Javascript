@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="frm1" action="form_action.asp">
+<button id="btn1" name="subject" type="submit" value="fav_HTML">Button1</button>
+<button id="btn2" name="subject" type="submit" value="fav_CSS">Button2</button>
+</form>
+
+<p>Click the "Try it" button to return the text on the "HTML" button:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("btn1").innerHTML;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
