@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="planets.gif" width="145" height="126" usemap="#planetmap">
+
+<map name="planetmap">
+<area id="venus" shape="circle" coords="124,58,8" alt="A beautiful planet" href="venus.htm">
+</map>
+
+<p>Click the button to display the alternate text for the "venus" area.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("venus").alt;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
