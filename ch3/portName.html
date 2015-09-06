@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="planets.gif" width="145" height="126" usemap="#planetmap">
+
+<map name="planetmap">
+<area id="venus" shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
+
+<p>Click the button to display the port of the href attribute for the "venus" area in the image-map.</p>
+
+<p><b>Note:</b> If the port part is not specified in the URL, or if the port number is 80 (which is default), some browsers will just display 0 or nothing.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("venus").port;
+    document.getElementById("demo").innerHTML = "Port: " + x;
+}
+</script>
+
+</body>
+</html>
