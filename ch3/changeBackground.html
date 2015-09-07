@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe id="myframe" src="demo_iframe.htm">
+<p>Your browser does not support iframes.</p>
+</iframe>
+
+<p>Click to change the background color of the document in the iframe.</p>
+
+<p id="demo"></p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myframe");
+    x.style.backgroundColor = "aqua";
+}
+</script>
+
+</body>
+</html>
