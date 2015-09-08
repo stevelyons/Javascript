@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function createCaption(id) {
+    document.getElementById(id).createCaption().innerHTML = "My new caption";
+}
+</script>
+</head>
+<body>
+
+<table id="myTable" style="border: 1px solid black">
+<tr>
+<td>Row1 cell1</td>
+<td>Row1 cell2</td>
+</tr>
+<tr>
+<td>Row2 cell1</td>
+<td>Row2 cell2</td>
+</tr>
+</table>
+
+<p>
+<input type="button" onclick="createCaption('myTable')" value="Create caption">
+</p>
+
+</body>
+</html>
