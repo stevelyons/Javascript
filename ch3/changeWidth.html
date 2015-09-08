@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function changeBorder(id) {
+    document.getElementById(id).style.border = "5px solid";
+}
+</script>
+</head>
+<body>
+
+<table style="border:1px solid black" id="myTable">
+<tr>
+<td>100</td>
+<td>200</td>
+</tr>
+<tr>
+<td>300</td>
+<td>400</td>
+</tr>
+</table>
+
+<p>
+<input type="button" onclick="changeBorder('myTable')" value="Change Border">
+</p>
+
+</body>
+</html>
