@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function changeContent(id, row, cell, content) {
+    var x = document.getElementById(id).rows[row].cells;
+    x[cell].innerHTML = content;
+}
+</script>
+</head>
+
+<body>
+<table id="myTable" border="1">
+<tr>
+<td>Row1 cell1</td>
+<td>Row1 cell2</td>
+</tr>
+<tr>
+<td>Row2 cell1</td>
+<td>Row2 cell2</td>
+</tr>
+<tr>
+<td>Row3 cell1</td>
+<td>Row3 cell2</td>
+</tr>
+</table>
+
+<p>
+<input type="button" onclick="changeContent('myTable', 0, 0, 'Hello')" value="Change content">
+</p>
+
+</body>
+</html>
