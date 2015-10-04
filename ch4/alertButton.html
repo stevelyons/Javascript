@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function WhichButton(event) {
+    alert("You pressed button: " + event.button)
+}
+</script>
+</head>
+<body>
+
+<div onmousedown="WhichButton(event);">Click this text (with one of your mouse-buttons)
+<p>
+0	Specifies the left mouse-button<br>
+1	Specifies the middle mouse-button<br>
+2	Specifies the right mouse-button</p>
+<p><strong>Note:</strong> Internet Explorer 8, and earlier, returns another result:<br>
+1	Specifies the left mouse-button<br>
+4	Specifies the middle mouse-button<br>
+2	Specifies the right mouse-button</p>
+
+</div>
+</body>
+</html>
+
